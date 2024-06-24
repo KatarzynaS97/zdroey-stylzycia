@@ -1,0 +1,706 @@
+@font-face {
+    font-family: czcionka;
+    src: url(./Raleway-Italic-VariableFont_wght.ttf);
+}
+
+body {
+    background-image: url("../img/tlo.png");
+    margin: 0px;
+    font-size: 15px;
+    font-family: czcionka;
+
+
+}
+
+#naglowek {
+    width: 100%;
+    height: 200px;
+    background-color: #103965;
+
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 0px 5px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#zdjecie_naglowek {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#naglowek_text {
+    margin-left: 55px;
+    margin-top: 15px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #103965;
+
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.lista_naglowek {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 150px;
+    font-size: 15px;
+    height: 2em;
+    line-height: 2em;
+
+
+
+}
+
+.lista_naglowek_podpunkt {
+    float: left;
+    width: 150px;
+    color: white;
+    text-decoration: none;
+    border: solid black 1px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px 1px black;
+    transition: all ease-out 0.3s;
+    cursor: pointer;
+
+}
+
+.lista_naglowek_podpunkt:hover {
+    scale: 1.05;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+
+#glowny {
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    padding: 10px;
+    margin-top: 0;
+}
+
+h1 {
+    text-align: center;
+
+
+}
+
+.zdjecie {
+    margin-left: 30px;
+
+}
+
+.tytul_opisu {
+    margin-left: 30px;
+
+
+}
+
+.opis {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#tytul_opis {
+    font-size: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p,
+ul {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: czcionka;
+}
+
+.wynikBMI {
+    color: #229954;
+
+}
+
+.opisBMI {
+    font-size: 18px;
+
+
+}
+
+.TwojeBMI {
+    font-size: 18px;
+}
+
+#formularz_bmi {
+    background-color: rgb(229, 231, 233);
+    width: 700px;
+    height: 100%;
+    text-align: center;
+    margin-left: 180px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#waga,
+#wzrost {
+    font-size: 20px;
+    margin: 2px;
+}
+
+#oblicz,
+#reset {
+    font-size: 16px;
+    margin: 20px;
+    border: solid black 1px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px 1px black;
+    transition: all ease-out 0.3s;
+    cursor: pointer;
+
+}
+
+#oblicz:hover,
+#reset:hover {
+    scale: 1.05;
+    border-radius: 5px;
+    background-color: #103965;
+    color: #FFFFFF;
+}
+
+.wynikBMI_nadwaga {
+    color: #FF9900;
+}
+
+.wynikBMI_otylosc {
+    color: #990033;
+}
+
+.tresc {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#kalkulator_opis,
+#wskaznikBMI,
+#normyBMI {
+    font-size: 22px;
+    margin-top: 15px;
+    margin-left: 40px;
+
+}
+
+.naglowek {
+    margin: 15px;
+    padding: 10px;
+
+}
+
+.wiersz {
+    border-right: 1px solid;
+    border-top: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.wiersz_prawy {
+    border-top: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.naglowek2 {
+    border-right: 1px solid;
+    font-weight: 5px;
+
+}
+
+.tlo {
+    background-color: #ECEFF1;
+    font-size: 25px;
+}
+
+table {
+    margin-left: 300px;
+    ;
+}
+
+#diety {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top: 10px;
+
+
+}
+
+.dieta {
+    background-color: #F5CCB0;
+    height: 100%;
+    width: 180px;
+    border-radius: 5px;
+
+    text-align: center;
+
+
+}
+
+.dieta_rodzaj {
+    color: #103965;
+    font-weight: bold;
+}
+
+#opis_diet {
+    text-align: center;
+
+}
+
+.lista {
+    margin-left: 300px;
+    text-align: left;
+}
+
+#kontakt {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.kontakt1 {
+    background-color: #F5CCB0;
+    height: 100%;
+    width: 280px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.dane {
+    font-size: 22px;
+    padding: 5px;
+}
+
+
+
+.scrollup {
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    background: url("../img/strzalka.png") no-repeat 0px 0px;
+    /*tu podajac inen wspoórzedne mozna przesunąc obrazek */
+    position: fixed;
+    /*/na stałe */
+    right: 170px;
+    bottom: 10px;
+    display: none;
+}
+
+/*MEDIA QUERY DLA TABLETU */
+@media screen and (min-width:800px) and (max-width:1280px) {
+
+    #naglowek {
+        width: 100%;
+        height: 150px;
+
+    }
+
+    #zdjecie_naglowek {
+        width: 250;
+        height: 150px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    #naglowek_text {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    #glowny {
+        width: 780px;
+
+    }
+
+    .lista_naglowek {
+        margin-top: 0px;
+        font-size: 20px;
+
+    }
+
+    .lista_naglowek_podpunkt {
+        margin: 3px;
+
+    }
+
+    #glowny {
+
+        width: 600px;
+    }
+
+    /*INDEX.HTML*/
+    .opis,
+    ul {
+        font-size: 25px;
+
+    }
+
+    /*SCROLL*/
+    .scrollup {
+        right: 30px;
+        bottom: 10px;
+    }
+
+    /*KALKULATOR.THML*/
+    #formularz_bmi {
+        width: 400px;
+        margin-left:50px ;
+        font-size: 30px;
+    }
+
+    #waga,
+    #wzrost {
+        font-size: 30px;
+        margin: 2px;
+    }
+
+    #oblicz,
+    #reset {
+        font-size: 25px;
+
+
+    }
+
+    #kalkulator_opis,
+    #wskaznikBMI,
+    #normyBMI {
+        font-size: 30px;
+
+
+    }
+
+    .tresc {
+        font-size: 25px;
+    }
+
+    table {
+        margin-left: 100px;
+        ;
+    }
+
+    /*PIRAMIDA.HTML*/
+    #talerz_zdjecie {
+        width: 600px;
+        height: 400px;
+    }
+
+    .tresc_zdrowy_talerz {
+        font-size: 23px;
+    }
+
+    /*DIETA.HTML*/
+    #diety {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .dieta {
+        margin-top: 5px;
+    }
+
+    #opis_diet {
+        text-align: center;
+
+    }
+
+    .lista {
+        margin-left: 80px;
+        text-align: left;
+    }
+
+    #opis_diet>h3,
+    p {
+        font-size: 20px;
+    }
+}
+
+/*MEDIA QUERY*/
+@media screen and (min-width:481px) and (max-width:799px) {
+
+    #naglowek {
+        width: 100%;
+        height: 200px;
+
+
+    }
+
+    #zdjecie_naglowek {
+        width: 250;
+        height: 150px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    #naglowek_text {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    #glowny {
+        width: 450px;
+
+    }
+
+    .lista_naglowek {
+        margin-top: 0px;
+        font-size: 17px;
+
+    }
+
+    .lista_naglowek_podpunkt {
+        margin: 3px;
+    }
+
+    /*INDEX.HTML*/
+    .opis,
+    ul {
+        font-size: 25px;
+
+    }
+
+    .zdjecie {
+        width: 400px;
+        height: 208px;
+        margin-left: -3px;
+    }
+
+    /*SCROLL*/
+    .scrollup {
+        right: 30px;
+        bottom: 10px;
+    }
+
+    /*KALKULATOR.THML*/
+    #formularz_bmi {
+        width: 400px;
+        margin-left: 10px;
+        font-size: 30px;
+    }
+
+    #waga,
+    #wzrost {
+        font-size: 30px;
+        margin: 2px;
+    }
+
+    #oblicz,
+    #reset {
+        font-size: 25px;
+
+
+    }
+
+    #kalkulator_opis,
+    #wskaznikBMI,
+    #normyBMI {
+        font-size: 30px;
+
+
+    }
+
+    .tresc {
+        font-size: 25px;
+    }
+
+    table {
+        margin-left: 50px;
+        ;
+    }
+
+    /*PIRAMIDA.HTML*/
+    #talerz_zdjecie {
+        width: 400px;
+        height: 300px;
+    }
+
+    .tresc_zdrowy_talerz {
+        font-size: 23px;
+    }
+
+    /*DIETA.HTML*/
+    #diety {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .dieta {
+        margin-top: 5px;
+    }
+
+    #opis_diet {
+        text-align: center;
+
+    }
+
+    .lista {
+        margin-left: 80px;
+        text-align: left;
+    }
+
+    #opis_diet>h3,
+    p {
+        font-size: 20px;
+    }
+}
+
+
+
+/*MEDIA QUERY DLA TELEFONU*/
+@media screen and (max-width:480px) {
+
+    #naglowek {
+        width: 100%;
+        height: 150px;
+
+    }
+
+    #naglowek_text {
+        font-size: 20px;
+    }
+
+    #zdjecie_naglowek {
+        width: 200;
+        height: 100px;
+    }
+
+    #naglowek_text {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    #glowny {
+        width: 100px;
+
+    }
+
+    .lista_naglowek {
+        margin-top: 0px;
+        font-size: 16px;
+        margin-left: 25px;
+
+    }
+
+    .lista_naglowek_podpunkt {
+        margin: 2px;
+
+    }
+
+    #glowny {
+
+        width: 400px;
+    }
+
+    /*INDEX.HTML*/
+    .opis,
+    ul {
+        font-size: 25px;
+
+    }
+
+    .zdjecie {
+        width: 400px;
+        height: 208px;
+        margin-left: -3px;
+    }
+
+    /*SCROLL*/
+    .scrollup {
+        right: 0px;
+        bottom: 10px;
+    }
+
+    /*KALKULATOR.THML*/
+    #formularz_bmi {
+        width: 380px;
+        margin: 5px;
+        font-size: 30px;
+    }
+
+    #waga,
+    #wzrost {
+        font-size: 30px;
+        margin: 2px;
+    }
+
+    #oblicz,
+    #reset {
+        font-size: 25px;
+
+
+    }
+
+    #kalkulator_opis,
+    #wskaznikBMI,
+    #normyBMI {
+        font-size: 30px;
+
+
+    }
+
+    .tresc {
+        font-size: 25px;
+    }
+
+    table {
+        margin-left: 20px;
+        ;
+    }
+
+    /*PIRAMIDA.HTML*/
+    #talerz_zdjecie {
+        width: 400px;
+        height: 300px;
+    }
+
+    .tresc_zdrowy_talerz {
+        font-size: 23px;
+    }
+
+    /*DIETA.HTML*/
+    #diety {
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .dieta {
+        margin-top: 5px;
+    }
+
+    .lista {
+        margin-left: 20px;
+        text-align: left;
+    }
+
+    #opis_diet>h3,
+    p {
+        font-size: 20px;
+    }
+}

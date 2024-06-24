@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zdrowy styl życia</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.jpg">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+
+</head>
+
+<body>
+
+    <header id="naglowek">
+        <a href="index.html"> <img src="./img/rodzina.png" alt="rodzina zdrowie" id="zdjecie_naglowek"></a>
+        <h1 id="naglowek_text">Zdrowy styl życia</h1>
+        <div id="menu">
+            <ul class="lista_naglowek">
+                <a href="kalkulator.html">
+                    <li class="lista_naglowek_podpunkt" id="bmi">Kalkulator BMI</li>
+                </a>
+                <a href="piramida.html">
+                    <li class="lista_naglowek_podpunkt">Zdrowy talerz</li>
+                </a>
+                </a>
+                <a href="dieta.html">
+                    <li class="lista_naglowek_podpunkt">Dieta</li>
+                </a>
+                <a href="kontakt.html">
+                    <li class="lista_naglowek_podpunkt">Kontakt</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <main id="glowny">
+        <a href="#" class="scrollup "></a>
+        <div id="formularz_bmi">
+            <h3>Oblicz swoje BMI </h3>
+            <label>Waga:</label>
+            <input type="number" id="waga" placeholder="Podaj swoją wagę w kg">
+            <label>Wzrost:</label>
+            <input type="number" id="wzrost" placeholder="Podaj swoją wzrost w cm"><br />
+            <input type="button" id="oblicz" onClick="obliczBMI() " value="OBLICZ">
+            <button type="reset" id="reset" onClick="wyczysc()">WYCZYŚĆ</button>
+            <div id="wynik_bmi"></div>
+        </div>
+        <div id="kalkulator_opis">Kalkulator BMI – co to jest?</div>
+        <HR style="width: 300px; margin-left:50px;">
+        <p class="tresc">Kalkulator BMI jest narzędziem, które mówi, czy ważymy odpowiednio do swojego wzrostu. Jest
+            bardzo prosty w
+            obsłudze, a normy pozwalają na jednoznaczną interpretację wyników. W czasach, gdy nadmierna troska o
+            sylwetkę staje się problemem społecznym, kalkulator BMI jest wiarygodnym wyznacznikiem prawidłowej wagi.
+        </p>
+        <p id="wskaznikBMI">Wskaźnik BMI </p>
+        <HR style="width: 300px; margin-left:50px;">
+        <p class="tresc">Wskaźnik BMI to stosunek masy ciała (wagi) do wzrostu. Niskie wartości mówią o tym, że ważmy za
+            mało, wysokie
+            – że za dużo.
+            Im wyższy współczynnik BMI, tym wyższe ryzyko wystąpienia chorób związanych z nadmierną masą ciała. Są to
+            choroby serca, cukrzyca typu 2, nadciśnienie, miażdżyca, kamicy żółciowej, zapalenia kości i stawów,
+            bezdechów sennych, a nawet niektórych nowotworów (np. jelita grubego, piersi, endometrium czy pęcherzyka
+            żółciowego).</p>
+        <p id="normyBMI">Normy BMI</p>
+        <HR style=" width: 300px; margin-left:50px;">
+        <p class="tresc"> Zdrowy dorosły człowiek o prawidłowym stosunku wagi do wzrostu ma wskaźnik w granicach
+            18,5–24,9. BMI poniżej
+            18,5 informuje o niedowadze. Osoby ze wskaźnikiem BMI 25,0-29,9 cierpią na nadwagę. Współczynnik BMI powyżej
+            30,0 to już otyłość.<br /><br />
+
+            Sprawdź, co oznacza wskaźnik BMI</p>
+        <table>
+            <tr class="tlo">
+                <th class="naglowek naglowek2"> BMI</th>
+                <th class="naglowek ">interpretacja wyniku</th>
+            </tr>
+            <tr>
+                <td class="wiersz">mniej niż 18</td>
+                <td class="wiersz_prawy">wychudzony</td>
+            </tr>
+            <tr>
+                <td class="wiersz">od 18.5 do 25</td>
+                <td class="wiersz_prawy">prawdłowa masa ciała</td>
+            </tr>
+            <tr>
+                <td class="wiersz">od 25.5 do 29 </td>
+                <td class="wiersz_prawy">nadwaga</td>
+            </tr>
+            <tr>
+                <td class="wiersz">od 29 do 34 </td>
+                <td class="wiersz_prawy">otyłość Istopnia</td>
+            </tr>
+            <tr>
+                <td class="wiersz">od 34 do 39 </td>
+                <td class="wiersz_prawy">otyłość IIstopnia</td>
+            </tr>
+            <tr>
+                <td class="wiersz"> więcej niż 40</td>
+                <td class="wiersz_prawy">otyłość III stopnia</td>
+            </tr>
+        </table>
+
+        <p class="tresc">Korzyści z utrzymywania prawidłowego wskaźnika BMI</p>
+        <HR style="width: 300px; margin-left:50px;">
+        <p class="tresc">BMI w normie to nie tylko ładna sylwetka. Wiąże się także z naszym zdrowiem. Prawidłowe BMI to
+            m.in.:</p>
+        <ul class="tresc">
+            <li>lepsze ciśnienie krwi</li>
+            <li>mniejsze bóle mięśni i stawów</li>
+            <li>mniejsze obciążenie serca i układu krązenia </li>
+            <li>zmniejszenie stężenia trójglicerydów i glukozy we krwi</li>
+        </ul>
+    </main>
+    <footer id="stopka">
+        <h2>Realizacja</h2>
+        <p>Katarzyna Śmierzchalska</p>
+    </footer>
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>
